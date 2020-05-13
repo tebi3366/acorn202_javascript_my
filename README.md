@@ -42,4 +42,15 @@ acorn2020 javascript 수업 진행 입니다.
 - 빨강
   - 녹색
     - 파랑
+혼합해서 쓸수있음
+* 1단계
+  - 2단계
+    + 3단계
+      + 4단계
+      
+ 들여쓰기 4개의 공백 혹은 하나의 
+This is a normal paragraph:
 
+    This is a code block.
+    
+end code block.
