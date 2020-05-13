@@ -17,3 +17,29 @@ acorn2020 javascript 수업 진행 입니다.
 > This is a first blockqute.
 >	> This is a second blockqute.
 >	>	> This is a third blockqute.
+
+
+순서있는 목록 번호
+1. 첫번째
+2. 두번째
+3. 세번째
+
+어떤 번호를 입려해도 순서는 내림차순으로 정의
+1. 첫번째
+3. 세번째
+2. 두번째
+
+● 순서없는 목록(글머리 기호: *, +, - 지원)
+
+* 빨강
+  * 녹색
+    * 파랑
+
++ 빨강
+  + 녹색
+    + 파랑
+
+- 빨강
+  - 녹색
+    - 파랑
+
