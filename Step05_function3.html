@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step05_function.html</title>
+</head>
+<body>
+    <h1>fucntion type 테스트중...</h1>
+    <button onclick="test()">test 함수 호출하기</button>
+    <script>
+        // f1이 호출되고 undefined가 리턴된다
+        var f1=function(){
+            console.log("f1() 호출됨");
+        }
+        //f2로
+        var f2=function(){
+            console.log("f2() 호출됨");
+            return 999;
+        }
+        var f3=function(){
+            console.log("f3() 호출됨");
+            var msg="안녕";
+            return msg;
+        }
+
+        var test=function(){
+            var a=f1();
+            var b=f2();
+            var c=f3();
+        }
+    </script>
+</body>
+</html>
