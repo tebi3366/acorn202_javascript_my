@@ -33,7 +33,11 @@
                 //해당 정보를 p 요소에 출력하기
                 if(inputName == tmp.name){
                     document.querySelector("#console").innerText=
-                    tmp.name+tmp.phone+tmp.email;
+                        tmp.name+tmp.phone+tmp.email;
+                    break; //for 문도 탈출이 가능 할까?
+                }else{
+                    document.querySelector("#console").innerText=
+                        inputName+" 으로 검색된 정보는 없습니다.";
                 }
             }
         })
