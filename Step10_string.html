@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step10_string.html</title>
+</head>
+<body>
+    <h1>string type 테스트중...</h1>
+    <script>
+        var line="abcde12345";
+        
+        //string type의 저장소 참조
+        var size=line.length
+        //string type 의 기능 사용
+        // replace 바꾸기
+        var result=line.replace("e", "EEE");
+        //서양쪽은 0~5사이이면 0이상 5미만이다.
+        var result2=line.substring*(0, 5)
+        //제거할문자
+        var result3=line.split("e");
+
+        
+        //back tick 문자를 이용해서 문자열을 만들수도 있다.
+        //back tick 문자열 형식은 ECMAScript6 에서 추가됨
+        //지금 까지 배운거는 ECMAScript5 버전
+        var info=`내이름은 김구라
+            너의이름은 원숭이
+            하나
+            둘
+        `;
+
+        var myName="김구라";
+        var yourName="원숭이";
+
+        var info2=`내이름은 : ${myName} , 너의 이름 : ${yourName}`;
+    </script>
+</body>
+</html>
