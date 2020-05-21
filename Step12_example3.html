@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Step12_example3.html</title>
+    <style>
+        tbody tr:hover{
+            background-color: yellow;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>createElement 테스트 중 ...</h1>
@@ -26,10 +32,16 @@
     </table>
     <script>
         document.querySelector("#addBtn").addEventListener("click",function(){
+            //1. 입력한 정보를 읽어와서
+            //2. td 요소 3개를 만들어서 innerText 에 출력하고
+            //3. tr 요소 1개를 만들어서 td를 append 하고
+            //4. tbody 요소에 tr요소를 append 한다.
             let num=document.querySelector("#inputNum").value
             let name=document.querySelector("#inputName").value
             let addr=document.querySelector("#inputAddr").value
+
             let tr=document.createElement("tr");
+
             let td1=document.createElement("td");
             td1.innerText=num;
             let td2=document.createElement("td");
@@ -42,11 +54,15 @@
             tr.append(td3);
         
             document.querySelector("tbody").append(tr); 
-            
+            //5. tr을 클릭했을때 실행할 함수 등록
             tr.addEventListener("click",function(){
             let isDelete=confirm("삭제할까요?");
             if(isDelete){
                 this.remove();
+
+            // if(confirm("삭제하시겠습니까?")){
+            //     this.remove();
+            // }
             }
             })
         
