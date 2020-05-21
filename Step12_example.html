@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>createElement 테스트중...</h1>
+    <ul id="friendList">
+
+    </ul>
+    <script>
+        //친구 이름이 들어 있는 배열
+        const names=["김구라","해골","원숭이","주뎅이","덩어리"];
+        /* 
+            배열에 들어있는 친구이름을 이용해서
+            <li>김구라</li>
+            와 같은 요소를 동적으로 만들어서
+            ul요소에 append 해보세요. (페이지 로딩);
+        */
+        // for(let i=0; i<names.length; i++){
+        // let li1=document.createElement("li");  
+        // li1.innerText=names[i]
+        // document.querySelector("#friendList").append(li1);
+        // }
+
+        names.forEach(function(item, index){
+            let li1=document.createElement("li");
+            li1.innerText=names[index];
+            document.querySelector("#friendList").append(li1);
+            })
+    </script>
+</body>
+</html>

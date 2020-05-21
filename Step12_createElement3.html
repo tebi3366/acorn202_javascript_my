@@ -7,26 +7,34 @@
 </head>
 <body>
     <h1>createElement 테스트중...</h1>
-    <div id="wrapper">
-
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>김구라</td>
+                <td>노량진</td>
+            </tr>
+        </tbody>
+    </table>
     <script>
-        /*
-            <a href="hello.html" class="my-link">이동하기</a>
-            위와 같은 구조의 a 요소를 동적으로 만들기
-        */
-        // let newLink=document.createElement("a");
-        // newLink.innerText="이동하기";
-        // newLink.setAttribute("href","hello.html");
-        // newLink.setAttribute("class","my-link")
-
-        // //div 의 자식 요소로 추가하기
-        // document.querySelector("#wrapper").append(newLink);
-
-        setInterval(function(){
-            console.log("함수가 호출되네?");
-
-        }, 1000);
+        //td  요소를 만들어서 참조값을 변수 td1 에 담기
+        let td1=document.createElement("td");
+        // td  요소에 innerText 출력하기 
+        td1.innerText="해골";
+        let td2=document.createElement("td");
+        td2.innerText="행신동";
+        //tr 요소를 만들어서 
+        let tr=document.createElement("tr");
+        //tr 요소에 td  요소 2개를 append 하기 
+        tr.append(td1);
+        tr.append(td2);
+        //tbody 요소에 위에서 새로 만든 tr 요소 append 하기
+        document.querySelector("tbody").append(tr);
     </script>
 </body>
 </html>
