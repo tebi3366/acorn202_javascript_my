@@ -29,10 +29,13 @@
             let li1=document.createElement("li");
             li1.innerText=msg;
             document.querySelector("#toDoList").append(li1);
-            //5. 만든 li 요소에 click 리스너 함수 등록하기
+            //5. 만든 li 요소에 click 리스너 함수 등록하기    
             li1.addEventListener("click",function(){
                 console.log("li를 클릭했네?")
-                this.remove();
+                let isDelete=confirm("삭제할래?")
+                if(isDelete){
+                    this.remove();
+                }
 
         })
         
