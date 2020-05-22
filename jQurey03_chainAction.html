@@ -8,6 +8,7 @@
 <body>
     <p id="one">p1</p>
     <p id="two">p2</p>
+    <input type="text" id="three">
     <script src="js/jquery-3.5.1.js"></script>
     <script>
         //p1 의 innerText 를 수정하고
@@ -25,6 +26,19 @@
 
         //위 3가지 동작을 chain 형식으로 바꾸면 아래와 같다.
         $("#two").text("김구라").css("color","red").css("background-color","yellow");
+        // 위의 3 가지 동작을 chain 형식으로 바꾸면 아래와 같다
+         
+        // input 요소에 value 값을 넣어주는 동작
+        $("#three").val("원숭이");
+
+        // innerText 값을 읽어오는 동작
+        var result1=$("#one").text();
+        // input 요소의 value 값을 읽어오는 동작
+        var result2=$("#three").val();
+
+        //$("#one").text("xx") -> p1- xx로바뀐다 ,$("#one").text() 텍스트뒤 빈칸으로 두면 one선택한 p내용을 출력함
+        //$("#one").val("yyy") value 값을 입력해준다.
+        //$("#three").val().vss("color","blue") string 타입이 오면 안되고 이미 값을 출력한상태에서 추가로 못함
     </script>
 </body>
 </html>
