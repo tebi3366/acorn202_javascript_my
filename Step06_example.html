@@ -23,8 +23,8 @@
 
         //input 요소에 keydown 이벤트가 일어났을때 호출되는 함수 등록
         document.querySelector("#inputMsg")//{ }↓
-        .addEventListener("keyup", function(event){
-            console.log(event);
+        .addEventListener("keydown", function(event){
+            // console.log(event);
             //만일 event.key가 "Enter" 와 같다면   == 같다면 != 다르다면
             if(event.key == "Enter"){ //조건부 수행 블럭
                 //1. input 입력한 value 값 읽어오기
