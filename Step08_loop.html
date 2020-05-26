@@ -20,9 +20,11 @@
         document.querySelector("#printBtn")
         .addEventListener("click", function(){
             //1. names 배열에 있는 문자열을 하나씩 참조해서
+            divs=document.querySelectorAll("div")
             for(var i=0; i<names.length; i++){
-                //2. 모든 div  요소에 순서대로 innerText  에 넣어주기 
-                document.querySelectorAll("div")[i].innerText=names[i];
+                //2. 모든 div  요소에 순서대로 innerText  에 넣어주기
+                divs[i].innerText=names[i]
+                // document.querySelectorAll("div")[i].innerText=names[i];
             }
         });
     </script>
